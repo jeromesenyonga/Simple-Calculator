@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Simple Calc</title>
+    </head>
+    <body>
+        <script>
+            function AddBoxes(){
+                num1 = window.document.calculator.box1.value;
+                num2 = window.document.calculator.box2.value;
+                total = (num1 *1)+(num2*1);
+                alert(num1+ "+" +num2+ "=" +total)
+            }
+            function SubtractBoxes(){
+                num1 = window.document.calculator.box1.value;
+                num2 = window.document.calculator.box2.value;
+                total = (num1 *1)-(num2*1);
+                alert(num1+ "-" +num2+ "=" +total)
+            }
+            function MultiplyBoxes(){
+                num1 = window.document.calculator.box1.value;
+                num2 = window.document.calculator.box2.value;
+                total = (num1 * num2*1);
+                alert(num1+ "*" +num2+ "=" +total)
+            }
+            function DivideBoxes(){
+                num1 = window.document.calculator.box1.value;
+                num2 = window.document.calculator.box2.value;
+                total = (num1 / num2*1);
+                alert(num1+ "/" +num2+ "=" +total)
+            }
+        </script>
+          <form name="calculator">
+                <input type="text" name="box1" value="" size=6>
+                <input type="text" name="box2" value="" size=6>
+                </form>
+                <a href="javascript:AddBoxes()">Add</a>
+                <a href="javascript:SubtractBoxes()">Subtract</a>
+                <a href="javascript:MultiplyBoxes()">Multiply</a>
+                <a href="javascript:DivideBoxes()">Divide</a>
+            
+            
+    </body>
+</html>
